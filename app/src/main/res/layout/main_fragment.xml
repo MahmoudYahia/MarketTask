@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/back_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="4dp"
+            android:src="@drawable/ic_back_left_blue_dark" />
+
+        <TextView
+            android:id="@+id/screen_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/textColorPrimary"
+            android:layout_weight="1"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/products_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:padding="4dp"
+        tools:visibility="gone"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        >
+
+
+        <ImageView
+            android:id="@+id/detail_img"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            tools:src="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/textColorPrimary"
+            tools:text="This is a title about us " />
+
+        <TextView
+            android:id="@+id/detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/holo_red_light"
+            tools:text="20 $" />
+
+        <TextView
+            android:id="@+id/detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/textColorSecondary"
+            tools:text="Mahmoud Yahia ,Computer Science graduate,Android devloper."/>
+    </LinearLayout>
+</LinearLayout>
